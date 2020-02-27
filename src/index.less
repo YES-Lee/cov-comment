@@ -1,0 +1,142 @@
+.cov-comment {
+  .initializing {
+    text-align: center;
+  }
+  .cov-header {
+    border: 1px solid #ededed;
+    border-radius: 2px;
+
+    .cov-header-textarea {
+      padding: 1rem;
+      border: none;
+      box-sizing: border-box;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #3c484e;
+      transition: all .3s ease;
+      outline: none;
+      resize: none;
+      width: 100%;
+    }
+
+    .cov-header-control {
+      background-color: #fbfbfb;
+      padding: .5rem;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+
+      .cov-control-wrapper {
+        display: inline-block;
+        overflow: hidden;
+        box-sizing: border-box;
+        flex: 1;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+
+        .cov-control-input {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0;
+          border: none;
+          outline: none;
+          background: none;
+          line-height: 1.5;
+          padding: .5rem;
+        }
+
+        .cov-control-btn {
+          display: block;
+          color: #fff;
+          font-weight: bolder;
+          border-radius: 30px;
+          border: 1px solid #e9eff3;
+          background-color: #111;
+          padding: .5em 0;
+          user-select: none;
+          font-size: 1em !important;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .comment-count {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+
+    .line {
+      flex: auto;
+      height: 1px;
+      background-color: #ededed;
+    }
+
+    .count-text {
+      flex: none;
+      margin: 0 1rem;
+      color: #888;
+    }
+  }
+
+  .comment-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    .load-more {
+      text-align: center;
+      width: fit-content;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      border: 1px solid #ededed;
+      cursor: pointer;
+      color: #888;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+
+      &.loading {
+        cursor: not-allowed;
+      }
+
+      .loading-more-image {
+        margin-right: .5rem;
+        animation: rote linear infinite 2s;
+      }
+    }
+  }
+}
+
+@keyframes rote {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .cov-comment {
+    .cov-header {
+      .cov-header-control {
+        display: block;
+        .cov-control-wrapper {
+          display: block;
+          width: 100%;
+          margin: 0;
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

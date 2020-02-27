@@ -1,0 +1,68 @@
+.cov-row {
+  display: flex;
+  margin: 1rem 0;
+  position: relative;
+  border-top: 1px solid rgb(237, 237, 237);
+  padding-top: 1rem;
+
+  .left {
+    flex: 0 0 auto;
+    .avatar {
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #ededed;
+    }
+  }
+
+  .right {
+    flex: 1 1 auto;
+    margin-left: .5rem;
+    overflow: hidden;
+
+    .header {
+      .ua {
+        font-size: .5rem;
+        color: #888;
+        letter-spacing: 1px;
+        margin-left: 1rem;
+      }
+      .time {
+        float: right;
+        font-size: .5rem;
+        color: #888;
+        letter-spacing: 1px;
+      }
+    }
+
+    .content {
+      margin: .5rem 0 0;
+    }
+
+    .reply-text {
+      display: none;
+      margin-top: .5rem;
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  .reply-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #252525;
+    color: #fff;
+    padding: .2rem .4rem;
+    font-size: .4rem;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+  }
+
+  &:hover .reply-btn {
+    display: block;
+  }
+}
