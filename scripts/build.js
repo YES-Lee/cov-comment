@@ -2,13 +2,14 @@ const webpack = require('webpack')
 const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const pkg = require('../package.json')
 
 const compiler = webpack({
   mode: 'production',
   entry: path.resolve(__dirname, '../src/index.js'),
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'cov-comment.min.js'
+    filename: `cov-comment-v${pkg.version}.min.js`
   },
   module: {
     rules: [
