@@ -1,6 +1,16 @@
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
 const path = require('path')
+const fs = require('fs')
+
+const doc = fs.readFileSync(path.resolve(__dirname, '../README.md'), { encoding: 'utf8' })
+
+const template = `
+(function () {
+  window.__doc__ = unescape('${escape(doc)}')
+})()
+`
+fs.writeFileSync(path.resolve(__dirname, '../public/doc.js'), template, { encoding: 'utf8' })
 
 const compiler = webpack({
   mode: 'development',
