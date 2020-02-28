@@ -6,6 +6,13 @@
 
 预览2: [https://yes-lee.github.io/cov-comment/](https://yes-lee.github.io/cov-comment/)
 
+## 特性
+
+* 无需登录即可评论
+* 集成简单，可集成任何类型网站
+* 支持`markdown`
+* 使用[gravatar](https://en.gravatar.com/)头像
+
 ## 使用
 
 ### 引入插件
@@ -41,6 +48,10 @@
 |appKey|string|是||leancloud的应用appKey|
 |pageSize|number|否|10|每页评论数量|
 |placeholder|string|否|评论一下～|评论框占位符|
+
+## TODO
+
+* [Bug] 评论后评论总数没变
 
 ## License
 
