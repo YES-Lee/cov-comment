@@ -1,5 +1,7 @@
 # CovComment
 
+![](https://img.shields.io/github/issues/YES-Lee/cov-comment) ![](https://img.shields.io/github/license/YES-Lee/cov-comment) ![](https://img.shields.io/github/stars/YES-Lee/cov-comment) ![](https://img.shields.io/github/v/release/YES-Lee/cov-comment) ![](https://img.shields.io/david/YES-Lee/cov-comment)
+
 一个基于`web components`和`leanCloud引擎`开发的博客评论插件
 
 预览1：[https://johnsonlee.site/post/cov-comment](https://johnsonlee.site/post/cov-comment)
@@ -52,6 +54,7 @@
 ## TODO
 
 * [Bug] 评论后评论总数没变
+* [Bug] 新增评论后，添加到了children里面
 
 ## License
 
