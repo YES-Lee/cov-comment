@@ -2,6 +2,8 @@
 
 一个基于`web components`和`leanCloud引擎`开发的博客评论插件
 
+示例：[https://yes-lee.github.io/cov-comment/](https://yes-lee.github.io/cov-comment/)
+
 ## 使用
 
 ### 引入插件
